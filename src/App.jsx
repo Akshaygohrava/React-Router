@@ -1,5 +1,6 @@
 import './App.css';
 import './App.scss';
+import styles from './app.module.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './component/Home';
 import About from './component/About';
@@ -8,7 +9,7 @@ import Contact from './component/Contact';
 const App = () => {
   return (
     <>
-      <h1>An React Rouing</h1>
+      <h1 style={styles.h1}>An React Rouing</h1>
       <Router>
       
           <ul>
